@@ -1,4 +1,5 @@
 # Test for DB -> Spring -> webui
+Small skeleton project for basic Spring project with a connection Postgres DB
 
 ## Docker setup
 
