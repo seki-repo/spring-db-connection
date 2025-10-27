@@ -1,0 +1,28 @@
+databaseChangeLog:
+  - preConditions:
+      - runningAs:
+          username: postgres
+  - changeSet:
+      id: 1
+      author: seb
+      changes:
+        - createTable:
+            tableName: person
+            columns:
+              - column:
+                  name: Personid
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: LastName
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: FirstName
+                  type: varchar(255)
+                  constraints:
+                    nullable: true
